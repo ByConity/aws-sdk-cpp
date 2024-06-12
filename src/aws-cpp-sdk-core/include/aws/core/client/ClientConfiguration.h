@@ -83,6 +83,7 @@ namespace Aws
              */
             explicit ClientConfiguration(bool useSmartDefaults, const char* defaultMode = "legacy", bool shouldDisableIMDS = false);
 
+            virtual ~ClientConfiguration() = default;
             /**
              * User Agent string user for http calls. This is filled in for you in the constructor. Don't override this unless you have a really good reason.
              */
